@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0782AA7BBBD07C7CE6E95A57 /* Pods_LIveSkillsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5388A87DFB1CE8AC16B46D /* Pods_LIveSkillsSearch.framework */; };
 		9930F9B11EC332F600A1A313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930F9B01EC332F600A1A313 /* AppDelegate.swift */; };
 		9930F9B31EC332F600A1A313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9930F9B21EC332F600A1A313 /* ViewController.swift */; };
 		9930F9B61EC332F600A1A313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9930F9B41EC332F600A1A313 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8654D2DC17575AB4BF323335 /* Pods-LIveSkillsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveSkillsSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LIveSkillsSearch/Pods-LIveSkillsSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		92FE00078B69634CD2ECD3F0 /* Pods-LIveSkillsSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIveSkillsSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-LIveSkillsSearch/Pods-LIveSkillsSearch.release.xcconfig"; sourceTree = "<group>"; };
 		9930F9AD1EC332F600A1A313 /* LIveSkillsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveSkillsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9930F9B01EC332F600A1A313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9930F9B21EC332F600A1A313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		9930F9CC1EC332F600A1A313 /* LIveSkillsSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIveSkillsSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9930F9D01EC332F600A1A313 /* LIveSkillsSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIveSkillsSearchUITests.swift; sourceTree = "<group>"; };
 		9930F9D21EC332F600A1A313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5388A87DFB1CE8AC16B46D /* Pods_LIveSkillsSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIveSkillsSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0782AA7BBBD07C7CE6E95A57 /* Pods_LIveSkillsSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76912C7C2BAA8184FFAE2627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8654D2DC17575AB4BF323335 /* Pods-LIveSkillsSearch.debug.xcconfig */,
+				92FE00078B69634CD2ECD3F0 /* Pods-LIveSkillsSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9930F9A41EC332F600A1A313 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				9930F9C41EC332F600A1A313 /* LIveSkillsSearchTests */,
 				9930F9CF1EC332F600A1A313 /* LIveSkillsSearchUITests */,
 				9930F9AE1EC332F600A1A313 /* Products */,
+				76912C7C2BAA8184FFAE2627 /* Pods */,
+				99336478865B6200828F0AAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = LIveSkillsSearchUITests;
 			sourceTree = "<group>";
 		};
+		99336478865B6200828F0AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE5388A87DFB1CE8AC16B46D /* Pods_LIveSkillsSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9930F9D51EC332F600A1A313 /* Build configuration list for PBXNativeTarget "LIveSkillsSearch" */;
 			buildPhases = (
+				1772D6F7C483AF17E98DE8DD /* [CP] Check Pods Manifest.lock */,
 				9930F9A91EC332F600A1A313 /* Sources */,
 				9930F9AA1EC332F600A1A313 /* Frameworks */,
 				9930F9AB1EC332F600A1A313 /* Resources */,
+				66671ACEC8F757FB3477ED3F /* [CP] Embed Pods Frameworks */,
+				1BDEECFAD616A46ED10E603D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1772D6F7C483AF17E98DE8DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BDEECFAD616A46ED10E603D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LIveSkillsSearch/Pods-LIveSkillsSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66671ACEC8F757FB3477ED3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LIveSkillsSearch/Pods-LIveSkillsSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9930F9A91EC332F600A1A313 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		9930F9D61EC332F600A1A313 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8654D2DC17575AB4BF323335 /* Pods-LIveSkillsSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LIveSkillsSearch/Info.plist;
@@ -423,6 +499,7 @@
 		};
 		9930F9D71EC332F600A1A313 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92FE00078B69634CD2ECD3F0 /* Pods-LIveSkillsSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LIveSkillsSearch/Info.plist;
