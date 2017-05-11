@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     }
 
 
+    
 
 }
 
@@ -56,6 +57,11 @@ extension ViewController{
     
     @IBAction func sendGift() {
         socket.sendGiftMsg(giftName: "火箭", giftURL: "http://www.baidu.com", giftCount: 1000)
+    }
+    
+    // 礼物动画
+    @IBAction func giftAnima(_ sender: Any) {
+        self.navigationController?.pushViewController(GiftAnimationViewController(), animated: true)
     }
 
 }
