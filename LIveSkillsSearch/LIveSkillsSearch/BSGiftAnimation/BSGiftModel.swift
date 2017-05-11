@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BSGiftModelModel: NSObject {
+class BSGiftModel: NSObject {
     
     var senderName : String = ""
     var senderURL : String = ""
@@ -24,7 +24,7 @@ class BSGiftModelModel: NSObject {
     
     // 判断是否本模型,用于连续判断赠送礼物
     override func isEqual(_ object: Any?) -> Bool {
-        guard let object = object as? BSGiftModelModel else {
+        guard let object = object as? BSGiftModel else {
             return false
         }
         

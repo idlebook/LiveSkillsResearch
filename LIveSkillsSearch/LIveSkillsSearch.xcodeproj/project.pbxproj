@@ -18,7 +18,10 @@
 		99A945A11EC4781000DE579E /* GiftAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A9459F1EC4781000DE579E /* GiftAnimationViewController.swift */; };
 		99A945A21EC4781000DE579E /* GiftAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A945A01EC4781000DE579E /* GiftAnimationViewController.xib */; };
 		99A945A71EC4799D00DE579E /* BSGiftDigitLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A945A61EC4799D00DE579E /* BSGiftDigitLabel.swift */; };
-		99A945A91EC47AA400DE579E /* BSGiftModelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A945A81EC47AA400DE579E /* BSGiftModelModel.swift */; };
+		99A945A91EC47AA400DE579E /* BSGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A945A81EC47AA400DE579E /* BSGiftModel.swift */; };
+		99A945AB1EC47BCD00DE579E /* BSGiftChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A945AA1EC47BCD00DE579E /* BSGiftChannelView.swift */; };
+		99A945AD1EC47BF300DE579E /* BSGiftChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A945AC1EC47BF300DE579E /* BSGiftChannelView.xib */; };
+		99A945AF1EC4AA9100DE579E /* BSGiftContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A945AE1EC4AA9100DE579E /* BSGiftContainerView.swift */; };
 		99CE49DA1EC391EF0038FF5B /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CE49D51EC391EF0038FF5B /* ysocket.swift */; };
 		99CE49DB1EC391EF0038FF5B /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 99CE49D61EC391EF0038FF5B /* ytcpsocket.c */; };
 		99CE49DC1EC391EF0038FF5B /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CE49D71EC391EF0038FF5B /* ytcpsocket.swift */; };
@@ -65,7 +68,10 @@
 		99A9459F1EC4781000DE579E /* GiftAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftAnimationViewController.swift; sourceTree = "<group>"; };
 		99A945A01EC4781000DE579E /* GiftAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftAnimationViewController.xib; sourceTree = "<group>"; };
 		99A945A61EC4799D00DE579E /* BSGiftDigitLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSGiftDigitLabel.swift; sourceTree = "<group>"; };
-		99A945A81EC47AA400DE579E /* BSGiftModelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSGiftModelModel.swift; sourceTree = "<group>"; };
+		99A945A81EC47AA400DE579E /* BSGiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSGiftModel.swift; sourceTree = "<group>"; };
+		99A945AA1EC47BCD00DE579E /* BSGiftChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSGiftChannelView.swift; sourceTree = "<group>"; };
+		99A945AC1EC47BF300DE579E /* BSGiftChannelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSGiftChannelView.xib; sourceTree = "<group>"; };
+		99A945AE1EC4AA9100DE579E /* BSGiftContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSGiftContainerView.swift; sourceTree = "<group>"; };
 		99CE49D51EC391EF0038FF5B /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
 		99CE49D61EC391EF0038FF5B /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
 		99CE49D71EC391EF0038FF5B /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
@@ -183,7 +189,10 @@
 			isa = PBXGroup;
 			children = (
 				99A945A61EC4799D00DE579E /* BSGiftDigitLabel.swift */,
-				99A945A81EC47AA400DE579E /* BSGiftModelModel.swift */,
+				99A945A81EC47AA400DE579E /* BSGiftModel.swift */,
+				99A945AA1EC47BCD00DE579E /* BSGiftChannelView.swift */,
+				99A945AC1EC47BF300DE579E /* BSGiftChannelView.xib */,
+				99A945AE1EC4AA9100DE579E /* BSGiftContainerView.swift */,
 			);
 			path = BSGiftAnimation;
 			sourceTree = "<group>";
@@ -320,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A945A21EC4781000DE579E /* GiftAnimationViewController.xib in Resources */,
+				99A945AD1EC47BF300DE579E /* BSGiftChannelView.xib in Resources */,
 				99CE49E61EC393E20038FF5B /* IMMessage.proto in Resources */,
 				9930F9BB1EC332F600A1A313 /* LaunchScreen.storyboard in Resources */,
 				9930F9B81EC332F600A1A313 /* Assets.xcassets in Resources */,
@@ -402,12 +412,14 @@
 				99CE49DD1EC391EF0038FF5B /* yudpsocket.c in Sources */,
 				99CE49DB1EC391EF0038FF5B /* ytcpsocket.c in Sources */,
 				9930F9B11EC332F600A1A313 /* AppDelegate.swift in Sources */,
-				99A945A91EC47AA400DE579E /* BSGiftModelModel.swift in Sources */,
+				99A945A91EC47AA400DE579E /* BSGiftModel.swift in Sources */,
 				99A945A11EC4781000DE579E /* GiftAnimationViewController.swift in Sources */,
 				99CE49DC1EC391EF0038FF5B /* ytcpsocket.swift in Sources */,
 				99CE49DE1EC391EF0038FF5B /* yudpsocket.swift in Sources */,
 				99CE49E01EC392170038FF5B /* BSSocket.swift in Sources */,
+				99A945AB1EC47BCD00DE579E /* BSGiftChannelView.swift in Sources */,
 				99CE49E41EC393810038FF5B /* Immessage.proto.swift in Sources */,
+				99A945AF1EC4AA9100DE579E /* BSGiftContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
